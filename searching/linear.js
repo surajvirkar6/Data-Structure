@@ -11,8 +11,6 @@ let result1 = search1(array1, target1);
 
 function search1(array, target) {
   array.map((item, index) => {
-    if (item == target) {
-      return index;
-    }
+    item == target ? index : -1;
   });
 }
